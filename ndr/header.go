@@ -12,7 +12,7 @@ https://msdn.microsoft.com/en-us/library/cc243563.aspx
 Common Header - https://msdn.microsoft.com/en-us/library/cc243890.aspx
 8 bytes in total:
 - First byte - Version: Must equal 1
-- Second byte -  1st 4 bits: Endianess (0=Big; 1=Little); 2nd 4 bits: Character Encoding (0=ASCII; 1=EBCDIC)
+- Second byte -  1st 4 bits: Endianness (0=Big; 1=Little); 2nd 4 bits: Character Encoding (0=ASCII; 1=EBCDIC)
 - 3rd - Floating point representation (This does not seem to be the case in examples for Microsoft test sources)
 - 4th - Common Header Length: Must equal 8
 - 5th - 8th - Filler: MUST be set to 0xcccccccc on marshaling, and SHOULD be ignored during unmarshaling.
